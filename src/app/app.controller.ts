@@ -3,10 +3,15 @@ import { Controller, Get } from '@nestjs/common';
 
 @Controller('home')
 export class AppController {
- // constructor(private readonly appService: AppService{}
+  // constructor(private readonly appService: AppService{}
 
   @Get('hello')
   getHello(): string {
     return 'qualquer coisa.';
+  }
+
+  @Get('exemplo')
+  exemplo() {
+    return 'Exemplo de rota.';
   }
 }
